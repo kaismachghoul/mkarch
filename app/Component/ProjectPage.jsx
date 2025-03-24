@@ -25,7 +25,7 @@ export default function ProjectPage() {
 
       {/* Project Description */}
       <section className="py-16 px-6 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-semibold text-center mb-8">Architectural Description</h2>
+        <h2 className="text-3xl font-semibold text-center m-8">Architectural Description</h2>
         <p className="text-lg leading-relaxed text-justify">
           This Mediterranean-inspired residence harmoniously blends <strong>traditional elements</strong> with <strong>modern functionality</strong>, creating a timeless and inviting retreat. Defined by its <strong>exposed brickwork, graceful arches, and terracotta roof tiles</strong>, the design captures the essence of rustic elegance while offering contemporary comfort.
         </p>
@@ -37,7 +37,7 @@ export default function ProjectPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {["/6.jpg", "/2.jpg", "/3.jpg", "/4.jpg","/6.jpg","/7.jpg"].map((src, index) => (
             <div key={index} className="overflow-hidden rounded-lg shadow-lg cursor-pointer" onClick={() => setSelectedImage(src)}>
-              <img src={src} alt={`Project image ${index + 1}`} width={500} height={350} unoptimized = "true" className="w-full h-full object-cover" />
+              <img src={src} alt={`Project image ${index + 1}`} width={500} height={350} unoptimized = "true" className=" transition-transform transform hover:scale-105 w-full h-full object-cover" />
             </div>
           ))}
         </div>
