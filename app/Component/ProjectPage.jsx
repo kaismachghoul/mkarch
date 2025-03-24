@@ -10,7 +10,7 @@ export default function ProjectPage() {
       {/* Hero Section */}
       <section className="relative h-[100vh] flex items-center justify-center">
         <img 
-          src="/images/5.jpg" 
+          src="/5.jpg" 
           alt="Project Image" 
           fill = 'true'
           unoptimized ='true'
@@ -35,7 +35,7 @@ export default function ProjectPage() {
       <section className="py-16 px-6 max-w-7xl mx-auto">
         <h2 className="text-3xl font-semibold text-center mb-8">Project Gallery</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {["/images/6.jpg", "/images/2.jpg", "/images/3.jpg", "/images/4.jpg","/images/6.jpg","/images/7.jpg"].map((src, index) => (
+          {["/6.jpg", "/2.jpg", "/3.jpg", "/4.jpg","/6.jpg","/7.jpg"].map((src, index) => (
             <div key={index} className="overflow-hidden rounded-lg shadow-lg cursor-pointer" onClick={() => setSelectedImage(src)}>
               <img src={src} alt={`Project image ${index + 1}`} width={500} height={350} unoptimized = "true" className="w-full h-full object-cover" />
             </div>
